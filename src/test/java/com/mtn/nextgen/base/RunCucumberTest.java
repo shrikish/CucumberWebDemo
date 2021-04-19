@@ -1,6 +1,5 @@
 package com.mtn.nextgen.base;
 
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
