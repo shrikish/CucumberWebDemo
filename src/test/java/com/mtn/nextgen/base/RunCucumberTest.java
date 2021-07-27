@@ -9,10 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/resources/FeatureFiles",
 		glue={"com.mtn.nextgen.StepDefinition"},
-		plugin={"pretty", "html:target/cucumber-report/cucumber.html",
-					"json:target/cucumber-report/cucumber.json",
-					"junit:target/cucumber-report/cucumber.xml",
-					"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
+		plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 //		,monochrome=true
 //		,dryRun=false
 		)
